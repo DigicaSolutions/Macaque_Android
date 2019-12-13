@@ -23,7 +23,7 @@ The main motivation behind the Macaque is to facilitate embedding ML models into
 We hope that with our SDK programmers with no AI experience will be able to achieve that goal in no time.
 Our solution comprises of macaque library and two sample projects.
 
-There exists also an iOS implementation of Macaque which can be found [here]().
+There exists also an iOS implementation of Macaque which can be found [here](https://github.com/EnigmaPatternInc/Macaque_ios).
 
 ## Tools and Requirements
 
