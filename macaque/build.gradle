@@ -6,6 +6,23 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'org.jetbrains.dokka'
 
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+
+    def groupProjectID = 'com.enigmapattern.macaque'
+    def artifactProjectID = 'macaque'
+    def publishVersionID = '0.5.0'
+
+    userOrg = 'enigmapatterninc'
+    repoName = 'Macaque'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Macaque - a new SDK that provides easier and more reliable classification and detection of objects on Mobile devices. Deploying models on iOS or Android have never been easier!'
+    website = 'https://github.com/EnigmaPatternInc/Macaque_Android'
+}
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -40,6 +57,8 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-lite:2.0.0'
     implementation 'org.tensorflow:tensorflow-lite-gpu:2.0.0'
     implementation "org.tensorflow:tensorflow-android:1.13.1"
+    implementation 'org.pytorch:pytorch_android:1.3.0'
+    implementation 'org.pytorch:pytorch_android_torchvision:1.3.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'

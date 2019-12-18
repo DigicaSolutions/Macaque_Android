@@ -33,6 +33,14 @@ There exists also an iOS implementation of Macaque which can be found [here](htt
 
 ## Setup
 
+### From JCenter
+1. You need to have `jcenter()` entry in `repositories` block of your
+`build.gradle` file - either in project or in module (currently default 
+for all new Android projects). 
+2. Add `implement 'com.enigmapattern.macaque:macaque:0.5.0'` to 
+`dependencies` block of your module `build.gradle` file.
+
+### Building from source
 1. Clone the repository
 2. Open it as a project in Android Studio
 3. Build 'macaque' module (Gradle -> macaque -> Tasks -> build -> build)
