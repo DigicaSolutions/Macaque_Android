@@ -37,7 +37,7 @@ There exists also an iOS implementation of Macaque which can be found [here](htt
 1. You need to have `jcenter()` entry in `repositories` block of your
 `build.gradle` file - either in project or in module (currently default 
 for all new Android projects). 
-2. Add `implement 'com.enigmapattern.macaque:macaque:0.5.0'` to 
+2. Add `implementation 'com.enigmapattern.macaque:macaque:0.5.0'` to 
 `dependencies` block of your module `build.gradle` file.
 
 ### Building from source
@@ -123,7 +123,7 @@ required - look at the documentation in the code for more information.
 
 1. Select and instantiate proper input and output data providers eg.:
 ```
-val inputDataProvider = = BitmapToUINT8DataProvider()
+val inputDataProvider = BitmapToUINT8DataProvider()
 val outputDataProvider = Detector4outputsBoundingBoxesDataProvider()
 ```
 2. Instantiate predictor object (provide model path, references to input and output data providers and, optionally, one of flags
